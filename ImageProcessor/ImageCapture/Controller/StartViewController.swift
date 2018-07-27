@@ -21,10 +21,10 @@ class StartViewController: UIViewController {
         if segue.destination is RTRViewController{
             let rtrViewController = segue.destination as? RTRViewController
             rtrViewController?.token = api.token
-            let image:UIImage = UIImage(named: "Sea - rainy")!
-            let imageData:NSData = (UIImagePNGRepresentation(image)! as NSData)
-            let base64ImageString = imageData.base64EncodedString(options: .lineLength64Characters)
-            self.api.sendImage(token: self.api.token, base64Image: base64ImageString)
+            //let image:UIImage = UIImage(named: "Sea - rainy")!
+            //let imageData:NSData = (UIImagePNGRepresentation(image)! as NSData)
+            //let base64ImageString = imageData.base64EncodedString(options: .lineLength64Characters)
+            //self.api.sendImage(token: self.api.token, base64Image: base64ImageString)
         }
     }
 }

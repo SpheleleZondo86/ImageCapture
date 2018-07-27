@@ -23,7 +23,7 @@
                                 <rect key="frame" x="139" y="318" width="98" height="30"/>
                                 <state key="normal" title="Take A Picture"/>
                                 <connections>
-                                    <segue destination="0Xw-La-b7U" kind="presentation" id="xUg-yf-MiZ"/>
+                                    <segue destination="0Xw-La-b7U" kind="presentation" identifier="rtrViewControllerSugue" id="xUg-yf-MiZ"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -193,7 +193,7 @@
                         <outlet property="previewView" destination="78t-oL-WLK" id="Fba-IM-ct7"/>
                         <outlet property="showSettingsButton" destination="0fW-lk-fL5" id="YNB-ui-ENQ"/>
                         <outlet property="tableView" destination="udT-W7-X4D" id="hrq-gq-kua"/>
-                        <segue destination="vNS-fk-0iz" kind="presentation" id="mTn-d4-SnA"/>
+                        <segue destination="vNS-fk-0iz" kind="presentation" identifier="endViewControllerSegue" id="mTn-d4-SnA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UYQ-aJ-waw" userLabel="First Responder" sceneMemberID="firstResponder"/>

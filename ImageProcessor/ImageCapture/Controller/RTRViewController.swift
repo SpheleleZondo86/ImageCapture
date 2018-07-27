@@ -228,7 +228,7 @@ class RTRViewController: UIViewController, UITableViewDelegate, UITableViewDataS
             return
         }
         
-        let licensePath = (Bundle.main.bundlePath as NSString).appendingPathComponent("license")
+        let licensePath = (Bundle.main.bundlePath as NSString).appendingPathComponent("licence")
         engine = RTREngine.sharedEngine(withLicense: NSData(contentsOfFile: licensePath) as Data?)
         guard let rtrEngine = engine else {
             captureButton.isEnabled = false;
@@ -556,7 +556,7 @@ extension RTRViewController: RTRImageCaptureServiceDelegate
                                     if ok {
                                         if let croppedImage = rtrImage.uiImage() {
                                             resultImage = croppedImage
-                                            let imageData:NSData = UIImageJPEGRepresentation(resultImage, 0.50)! as NSData
+                                            let imageData:NSData = UIImageJPEGRepresentation(resultImage, 0.5)! as NSData
                                             let imageString = imageData.base64EncodedString(options: .init(rawValue:0))
                                             self.webAPI.sendImage(token: self.token, base64Image: imageString)
                                         }

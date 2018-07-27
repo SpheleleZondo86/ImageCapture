@@ -9,6 +9,6 @@
 import Foundation
 
 struct FieldValidations:Codable{
-    var regEx:String
-    var message:String
+    var RegEx:String?
+    var Message:String?
 }

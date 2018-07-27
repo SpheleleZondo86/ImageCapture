@@ -13,5 +13,4 @@ struct ServiceLoginResponse:Codable {
     var ReplyMessage:String?
     var UniqueIdentifier:String?
     var TransactionRef:Int?
-    
 }

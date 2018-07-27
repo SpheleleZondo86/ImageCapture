@@ -40,13 +40,14 @@ class WebAPI {
     }
     
     func sendImage(token:String, base64Image:String){
+        let currentDate = String()
         let session = URLSession.shared
         let url = "https://fcdev03af.getbucks.com/api/Engagement/GetEngagementFlow"
         let request = NSMutableURLRequest(url: NSURL(string: url)! as URL)
         request.httpMethod = "POST"
         request.addValue("application/json", forHTTPHeaderField: "Content-Type")
         request.addValue("GetBucks \(token)", forHTTPHeaderField: "Authorization")
-        let engagementRequest = EngagementRequest(channel: 4, clientIdentifier: "560BD441-A119-44C4-B0A2-0BF607E30F85", messageId: "65271a27-681e-4b50-8b3b-80667963ce5", fields: [], subFlow: 0, resetSession: false, input: "", fileURL: "", base64File: base64Image, fileName: "AbbyImage3", fileMimeType: "", isNotice: false, channelId: 0, clientChannelId: "560BD441-A119-44C4-B0A2-0BF607E30F85")
+        let engagementRequest = EngagementRequest(Channel: 4, ClientIdentifier: "560BD441A11944C4B0A20BF607E30F85", MessageId: "65271a27681e4b508b3b80667963ce5", Fields: [], SubFlow: 0, ResetSession: false, Input: "", FileURL: "", Base64File: base64Image, FileName: "AbbyBankStatement\(currentDate.getCurrentDateAsString())", FileMimeType: "", IsNotice: false, ChannelId: 3, ClientChannelId: "560BD441A11944C4B0A20BF607E30F85")
         
         request.httpBody = try! JSONEncoder().encode(engagementRequest)
         let task = session.dataTask(with: request as URLRequest){

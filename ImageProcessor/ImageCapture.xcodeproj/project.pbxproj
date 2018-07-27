@@ -40,6 +40,7 @@
 		AE62F9A2210A26FC002F8F60 /* EngagementResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE62F9A1210A26FC002F8F60 /* EngagementResponse.swift */; };
 		AE62F9A4210A483B002F8F60 /* EndViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE62F9A3210A483B002F8F60 /* EndViewController.swift */; };
 		AE88444E20F5606B00037CE1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE88444D20F5606B00037CE1 /* Images.xcassets */; };
+		AEBB4AE1210B181D00424126 /* licence in Resources */ = {isa = PBXBuildFile; fileRef = AE88444F20F5697B00037CE1 /* licence */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -105,7 +106,7 @@
 		AE62F9A1210A26FC002F8F60 /* EngagementResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EngagementResponse.swift; sourceTree = "<group>"; };
 		AE62F9A3210A483B002F8F60 /* EndViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndViewController.swift; sourceTree = "<group>"; };
 		AE88444D20F5606B00037CE1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		AE88444F20F5697B00037CE1 /* SRTT-0100-0006-4880-1361-7247.ABBYY.License */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SRTT-0100-0006-4880-1361-7247.ABBYY.License"; path = "../../../Downloads/SRTT-0100-0006-4880-1361-7247.ABBYY.License"; sourceTree = "<group>"; };
+		AE88444F20F5697B00037CE1 /* licence */ = {isa = PBXFileReference; lastKnownFileType = file; name = licence; path = ../../../Downloads/licence; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,7 +130,7 @@
 		5CB0FEA720DD52F6006A4CEF = {
 			isa = PBXGroup;
 			children = (
-				AE88444F20F5697B00037CE1 /* SRTT-0100-0006-4880-1361-7247.ABBYY.License */,
+				AE88444F20F5697B00037CE1 /* licence */,
 				92DBA5F720DF929300D499CA /* assets */,
 				5CB0FEC820DD590C006A4CEF /* libs */,
 				5CB0FEB220DD52F6006A4CEF /* ImageCapture */,
@@ -150,24 +151,15 @@
 			isa = PBXGroup;
 			children = (
 				5CB0FEBA20DD52F7006A4CEF /* Icons.xcassets */,
+				5CB0FEC520DD5527006A4CEF /* RTRSamples-Bridging-Header.h */,
 				5CB0FEBF20DD52F7006A4CEF /* Info.plist */,
+				AE890EB4210A8D5200BF4F90 /* Supporting Files */,
 				5CB0FEBC20DD52F7006A4CEF /* LaunchScreen.storyboard */,
 				5CB0FEB720DD52F6006A4CEF /* MainStoryboard.storyboard */,
-				5CB0FEB320DD52F6006A4CEF /* RTRAppDelegate.swift */,
-				5CB0FEC520DD5527006A4CEF /* RTRSamples-Bridging-Header.h */,
-				5CB0FEC620DD5527006A4CEF /* RTRDrawResultsView.swift */,
-				5CB0FEB520DD52F6006A4CEF /* RTRViewController.swift */,
+				AE890EB5210A8D7A00BF4F90 /* View */,
+				AE890EB3210A8D1B00BF4F90 /* Controller */,
 				AE88444D20F5606B00037CE1 /* Images.xcassets */,
-				AE2C2CE021092AD600ED996C /* WebAPI.swift */,
-				AE2C2CE2210931BF00ED996C /* StartViewController.swift */,
-				AE2C2CE4210938AA00ED996C /* ServiceLoginRequest.swift */,
-				AE2C2CE621093A8800ED996C /* ServiceLoginResponse.swift */,
-				AE2C2CE92109433200ED996C /* Extensions.swift */,
-				AE2C2CEB21094BD500ED996C /* EngagementRequest.swift */,
-				AE62F99D210A2270002F8F60 /* Field.swift */,
-				AE62F99F210A23BC002F8F60 /* FieldValidations.swift */,
-				AE62F9A1210A26FC002F8F60 /* EngagementResponse.swift */,
-				AE62F9A3210A483B002F8F60 /* EndViewController.swift */,
+				AE890EB2210A8CEF00BF4F90 /* Model */,
 			);
 			path = ImageCapture;
 			sourceTree = "<group>";
@@ -211,6 +203,47 @@
 				92DBA5FA20DF929300D499CA /* DIQBlockClassifier.imodel */,
 			);
 			path = patterns;
+			sourceTree = "<group>";
+		};
+		AE890EB2210A8CEF00BF4F90 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AE2C2CE021092AD600ED996C /* WebAPI.swift */,
+				AE2C2CE4210938AA00ED996C /* ServiceLoginRequest.swift */,
+				AE2C2CE621093A8800ED996C /* ServiceLoginResponse.swift */,
+				AE2C2CE92109433200ED996C /* Extensions.swift */,
+				AE2C2CEB21094BD500ED996C /* EngagementRequest.swift */,
+				AE62F99D210A2270002F8F60 /* Field.swift */,
+				AE62F99F210A23BC002F8F60 /* FieldValidations.swift */,
+				AE62F9A1210A26FC002F8F60 /* EngagementResponse.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AE890EB3210A8D1B00BF4F90 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5CB0FEB520DD52F6006A4CEF /* RTRViewController.swift */,
+				AE2C2CE2210931BF00ED996C /* StartViewController.swift */,
+				AE62F9A3210A483B002F8F60 /* EndViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		AE890EB4210A8D5200BF4F90 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5CB0FEB320DD52F6006A4CEF /* RTRAppDelegate.swift */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AE890EB5210A8D7A00BF4F90 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5CB0FEC620DD5527006A4CEF /* RTRDrawResultsView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -276,6 +309,7 @@
 			files = (
 				5CB0FEBE20DD52F7006A4CEF /* LaunchScreen.storyboard in Resources */,
 				AE88444E20F5606B00037CE1 /* Images.xcassets in Resources */,
+				AEBB4AE1210B181D00424126 /* licence in Resources */,
 				5CB0FEBB20DD52F7006A4CEF /* Icons.xcassets in Resources */,
 				5CB0FEB920DD52F6006A4CEF /* MainStoryboard.storyboard in Resources */,
 			);
@@ -464,7 +498,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3XKZ9X92UZ;
 				FRAMEWORK_SEARCH_PATHS = ../libs;
 				INFOPLIST_FILE = ImageCapture/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -473,6 +509,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.abbyy.rtr.sample-imagecapture";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "ImageCapture/RTRSamples-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -484,7 +521,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3XKZ9X92UZ;
 				FRAMEWORK_SEARCH_PATHS = ../libs;
 				INFOPLIST_FILE = ImageCapture/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -493,6 +532,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.abbyy.rtr.sample-imagecapture";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "ImageCapture/RTRSamples-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
